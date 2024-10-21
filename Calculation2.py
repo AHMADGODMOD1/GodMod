@@ -18,7 +18,7 @@ def clear_screen():
     os.system('clear' if os.name == 'posix' else 'cls')
 
 # Correct key for verification
-CORRECT_KEY = "@AHMAD_GODMOD1"
+CORRECT_KEY = "MAD BY GODMOD"
 
 result_history = []
 
@@ -59,9 +59,9 @@ def calculate_and_hide():
         elapsed_minutes = 0
 
     # Get inputs
-    period_number = int(input(f"{BRIGHT_CYAN}Please enter the last period number: {RESET}"))
-    last_result = int(input(f"{BRIGHT_CYAN}Please enter the last result number: {RESET}"))
-    second_result = int(input(f"{BRIGHT_CYAN}Enter the 2nd result number: {RESET}"))
+    period_number = int(input(f"{BRIGHT_CYAN}Enter The 2nd Result Number: {RESET}"))
+    last_result = int(input(f"{BRIGHT_CYAN}Enter The 3rd Last Result Number: {RESET}"))
+    second_result = int(input(f"{BRIGHT_CYAN}Enter The 4th Result Number: {RESET}"))
 
     # Clear the screen (hides previous inputs)
     clear_screen()
@@ -113,7 +113,7 @@ def exit_program():
         print(f"{BRIGHT_WHITE}{entry}{RESET}")
 
     print(f"{BRIGHT_BLUE}═════════════════════════════════════════════════════════════{RESET}")
-    print(f"{BRIGHT_CYAN}Thank you for using the program! Goodbye!{RESET}")
+    print(f"{BRIGHT_CYAN}Thank you for using this code! Goodbye!{RESET}")
     sys.exit()
 
 def update_results():
