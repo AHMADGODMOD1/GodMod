@@ -18,7 +18,7 @@ def clear_screen():
     os.system('clear' if os.name == 'posix' else 'cls')
 
 # Correct key for verification
-CORRECT_KEY = "MAD BY GODMOD"
+CORRECT_KEY = "@AHMAD_GODMOD1"
 
 result_history = []
 
