@@ -1,0 +1,141 @@
+/* General Layout and Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 255, 255, 0.6);
+    background: linear-gradient(145deg, #333333, #000000);
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-container:hover {
+    transform: scale(1.05);
+}
+
+/* Period Section */
+.period-section {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: #3498db;
+    box-shadow: 0px 8px 20px rgba(50, 115, 220, 0.8);
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    animation: glow 2s infinite alternate;
+}
+
+.period-number, .period-label {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Timer Section */
+.timer-section {
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: #2ecc71;
+    box-shadow: 0px 8px 20px rgba(46, 204, 113, 0.8);
+    color: #ffffff;
+}
+
+.timer-display {
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: pulse 1s infinite;
+}
+
+/* History Section */
+.history-section {
+    background: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ecf0f1;
+    box-shadow: 0px 8px 20px rgba(39, 60, 117, 0.8);
+}
+
+.history-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.history-item {
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.history-item:hover {
+    background-color: #1abc9c;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Clear History Button */
+.clear-btn {
+    padding: 12px 30px;
+    background: #e74c3c;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0px 5px 15px rgba(231, 76, 60, 0.6);
+}
+
+.clear-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #3498db; }
+    100% { box-shadow: 0 0 20px #2980b9; }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .period-number, .period-label {
+        font-size: 26px;
+    }
+
+    .timer-display {
+        font-size: 36px;
+    }
+
+    .history-section h3 {
+        font-size: 20px;
+    }
+
+    .history-item {
+        font-size: 18px;
+    }
+}
